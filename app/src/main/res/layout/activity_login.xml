@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".LoginActivity"
     android:background="@color/colorAccent">
 
     <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:hint="Name"
-        android:textColor="@color/white"
-        android:textColorHint="@color/colorPrimaryDark"
-        android:textSize="24sp"/>
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_below="@+id/etName"
+        android:id="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -32,8 +20,8 @@
         android:textSize="24sp"/>
 
     <EditText
-        android:id="@+id/etPassword"
-        android:layout_below="@+id/etEmail"
+        android:id="@+id/loginPassword"
+        android:layout_below="@+id/loginEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -45,27 +33,13 @@
         android:inputType="textPassword"
         android:textSize="24sp"/>
 
-    <EditText
-        android:id="@+id/etConfirm"
-        android:layout_below="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:hint="Confirm Password"
-        android:textColor="@color/white"
-        android:textColorHint="@color/colorPrimaryDark"
-        android:inputType="textPassword"
-        android:textSize="24sp"/>
-
     <Button
-        android:id="@+id/btnRegister"
-        android:layout_below="@id/etConfirm"
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/loginPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:text="Register"
+        android:text="Login"
         android:textSize="20sp"
         android:background="@color/colorPrimary"
         android:textColor="@color/white"/>
